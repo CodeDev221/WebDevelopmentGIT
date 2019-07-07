@@ -1,0 +1,85 @@
+
+
+body{
+      background: #313131;
+      height: 100vh;
+      text-align:center;
+
+}
+
+.container {
+  height: 100%;
+  margin-top: 100px;
+
+}
+
+.dice {
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: spin 9s infinite alternate;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes spin {
+
+      0% {
+        transform: rotateX(260deg) rotateY(360deg) translateZ(0px);
+      }
+
+}
+
+.side {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  opacity: .97;
+  transition: .5s;
+
+}
+
+
+.dice:hover > .side {
+  border-radius: 50%;
+}
+
+
+
+/* Punk targeti ees tähendab class elementi */
+
+.one {
+
+    transform: rotateX(90deg) translateZ(100px);
+    background: #f55;
+}
+
+.two {
+    transform: translateZ(100px);
+    background: #5f5;
+
+}
+
+.three {
+  transform: rotateY(90deg) translateZ(100px);
+  background: #55f;
+}
+
+.four {
+    transform: rotateY(180deg) translateZ(100px);
+    background: #ff1;
+}
+
+.five {
+    transform: rotateY(-90deg) translateZ(100px);
+    background: #555;
+}
+
+.six {
+    transform: rotateX(-90deg) translateZ(100px);
+    background: #111;
+}
